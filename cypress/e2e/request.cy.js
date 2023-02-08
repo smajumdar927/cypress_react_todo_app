@@ -24,7 +24,7 @@ describe('API Test suite', () => {
       })
   });
 
-  it.only('Simple POST request', () => {
+  it('Simple POST request', () => {
       cy.request({
         method: 'POST',
         url: 'http://localhost:8080/todos',
