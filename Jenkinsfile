@@ -5,9 +5,7 @@ pipeline {
             args : '-u root:root'
         }
     }
-}
-
-stages {
+    stages {
     stage ('Download the dependencies'){
         steps {
             sh "npm install"
@@ -20,5 +18,8 @@ stages {
         }
     }
 }
+
+}
+
 
     
