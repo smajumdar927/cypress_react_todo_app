@@ -33,6 +33,7 @@ describe('API Test suite', () => {
           'isComplete': true
         }
       }).then(response =>{
+        expect(response.status).to.be.eq(200)
         expect(response.body.name).to.be.eq('Feed baby')
       })
   });
