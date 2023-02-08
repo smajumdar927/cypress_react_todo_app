@@ -35,6 +35,7 @@ describe('API Test suite', () => {
       }).then(response =>{
         expect(response.status).to.be.eq(200)
         expect(response.body.name).to.be.eq('Feed baby')
+        cy.log('Test case passed')
       })
   });
 })
