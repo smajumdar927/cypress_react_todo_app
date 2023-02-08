@@ -13,11 +13,12 @@ stages {
             sh "npm install"
         }
     }
-}
-stages {
+
     stage ('build and test'){
         steps {
             sh "npm run build:and:test"
         }
     }
 }
+
+    
